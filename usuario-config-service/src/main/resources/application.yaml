@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: congif-server
+          uri: https://github.com/Jose-Ramon98/microservicios-seguridad-social
+          search-paths: config-data
+  application:
+    name: config-service
+          
